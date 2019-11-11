@@ -190,7 +190,6 @@ struct layer {
     void(*backward_gpu)  (struct layer, struct network_state);
     void(*update_gpu)    (struct layer, int, float, float, float);
     layer *share_layer;
-    int train;
     int batch_normalize;
     int shortcut;
     int batch;
@@ -207,7 +206,6 @@ struct layer {
     int n;
     int max_boxes;
     int groups;
-    int group_id;
     int size;
     int side;
     int stride;

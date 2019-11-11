@@ -1071,7 +1071,6 @@ void fuse_conv_batchnorm(network net)
                     }
                 }
 
-                free_convolutional_batchnorm(l);
                 l->batch_normalize = 0;
 #ifdef GPU
                 if (gpu_index >= 0) {
